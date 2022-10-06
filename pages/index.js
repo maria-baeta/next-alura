@@ -1,11 +1,27 @@
 import Link from "../src/components"
 
+const Title = ({ children, as }) => {
+  const Tag = as
+  return (
+    <>
+      <Tag>
+        {children}
+      </Tag>
+      <style jsx>{`
+        ${Tag} {
+          color: blue;
+        }
+      `}</style>
+    </>
+  )
+}
+
 const HomePage = () => {
   return (
     <div>
-      <h1>
+      <Title as='h1'>
         Alura Cases - Home
-      </h1>
+      </Title>
       <Link href='/faq'>Ir para o FAQ</Link>
     </div>
   )
