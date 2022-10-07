@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Link from "../src/components/Link"
 
 export async function getStaticProps(context) {
@@ -14,6 +15,11 @@ export async function getStaticProps(context) {
 const FAQPage = ({ questions }) => {
   return (
     <div>
+      <Head>
+        <title>
+          FAQ - Alura Cases Campanha
+        </title>
+      </Head>
       <h1>
         Alura Cases - Página de perguntas FAQ
       </h1>
