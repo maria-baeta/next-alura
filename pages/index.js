@@ -1,11 +1,4 @@
-const HomePage = () => {
-  return (
-    <div>
-      <h1>
-        Alura Cases - Home
-      </h1>
-    </div>
-  )
-}
+import HomeScreen from "../src/screens/HomeScreen";
 
-export default HomePage
+
+export default HomeScreen
